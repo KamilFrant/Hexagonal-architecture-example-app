@@ -14,7 +14,7 @@ I want to learn through practice, gain a deeper understanding of the concepts di
 
 📚 Learning Resource
 
-Book: Nie bój się ubrudzić rąk, tworząc czystą architekturę
+Book: Get Your Hands Dirty on Clean Architecture.
 
 Edition: Second Edition
 
