@@ -4,7 +4,7 @@ Clean Architecture — Practice
 
 📖 Introduction
 
-This repository is dedicated to learning Clean Architecture through practical exercises based on the book Nie bój się ubrudzić rąk, tworząc czystą architekturę — Second Edition.
+This repository is dedicated to learning Clean Architecture through practical exercises based on the book Get Your Hands Dirty on Clean Architecture — Second Edition.
 
 🎯 Project Goal
 
