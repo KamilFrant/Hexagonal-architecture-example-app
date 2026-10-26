@@ -4,6 +4,7 @@ import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import pl.kfrant.hexagonalarchexample.application.port.in.SendMoneyCommand;
 import pl.kfrant.hexagonalarchexample.application.port.in.SendMoneyUseCase;
+import pl.kfrant.hexagonalarchexample.application.port.out.AccountLock;
 import pl.kfrant.hexagonalarchexample.application.port.out.LoadAccountPort;
 import pl.kfrant.hexagonalarchexample.application.port.out.UpdateAccountStatePort;
 
@@ -11,7 +12,9 @@ import pl.kfrant.hexagonalarchexample.application.port.out.UpdateAccountStatePor
 @Transactional
 public class SendMoneyService implements SendMoneyUseCase {
     private final LoadAccountPort loadAccountPort;
+    private final AccountLock accountLock;
     private final UpdateAccountStatePort updateAccountStatePort;
+    private final MoneyTransferProperties moneyTransferProperties;
 
     @Override
     public boolean sendMoney(SendMoneyCommand command) {
