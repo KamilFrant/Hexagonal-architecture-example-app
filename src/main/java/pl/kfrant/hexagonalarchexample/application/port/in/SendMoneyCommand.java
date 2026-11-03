@@ -1,14 +1,15 @@
 package pl.kfrant.hexagonalarchexample.application.port.in;
 
+import jakarta.validation.constraints.NotNull;
 import pl.kfrant.hexagonalarchexample.application.domain.model.Account.AccountId;
 import pl.kfrant.hexagonalarchexample.application.domain.model.Money;
 
 import static pl.kfrant.hexagonalarchexample.common.validation.Validator.validate;
 
 public record SendMoneyCommand(
-        AccountId sourceAccountId,
-        AccountId targetAccountId,
-        Money money) {
+        @NotNull AccountId sourceAccountId,
+        @NotNull AccountId targetAccountId,
+        @NotNull @PositiveMoney Money money) {
 
     public SendMoneyCommand(
             AccountId sourceAccountId,

@@ -8,12 +8,13 @@ import pl.kfrant.hexagonalarchexample.application.domain.model.Account;
 import pl.kfrant.hexagonalarchexample.application.domain.model.Money;
 import pl.kfrant.hexagonalarchexample.application.port.in.SendMoneyCommand;
 import pl.kfrant.hexagonalarchexample.application.port.in.SendMoneyUseCase;
+import pl.kfrant.hexagonalarchexample.common.WebAdapter;
 
+@WebAdapter
 @RestController
 @RequiredArgsConstructor
-public class SendMoneyController {
+class SendMoneyController {
 
-    //TODO
     private final SendMoneyUseCase sendMoneyUseCase;
 
     @PostMapping("/accounts/sendMoney/{sourceAccountId}/{targetAccountId}/{amount}")

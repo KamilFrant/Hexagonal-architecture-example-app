@@ -8,13 +8,13 @@ import pl.kfrant.hexagonalarchexample.application.port.out.LoadAccountPort;
 import java.time.LocalDateTime;
 
 @RequiredArgsConstructor
-public class GetAccountBalanceService {
+class GetAccountBalanceService implements GetAccountBalanceUseCase{
 
     private final LoadAccountPort loadAccountPort;
 
-    public Money getAccountBalance(GetAccountBalanceUseCase.GetAccountBalanceQuery query){
-//        return loadAccountPort.loadAccount(query.accountId(), LocalDateTime.now())
-//                .calculateBalance();
-        return Money.ZERO;
+    @Override
+    public Money getAccountBalance(GetAccountBalanceQuery query) {
+        return loadAccountPort.loadAccount(query.accountId(), LocalDateTime.now())
+                .calculateBalance();
     }
 }

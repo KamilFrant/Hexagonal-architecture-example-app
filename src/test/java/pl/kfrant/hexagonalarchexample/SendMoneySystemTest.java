@@ -79,7 +79,7 @@ class SendMoneySystemTest {
         HttpEntity<Void> request = new HttpEntity<>(null, headers);
 
         return restTemplate.exchange(
-                "/accounts/send/{sourceAccountId}/{targetAccountId}/{amount}",
+                "/accounts/sendMoney/{sourceAccountId}/{targetAccountId}/{amount}",
                 HttpMethod.POST,
                 request,
                 Object.class,

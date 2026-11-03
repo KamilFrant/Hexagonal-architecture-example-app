@@ -1,7 +1,10 @@
-package pl.kfrant.hexagonalarchexample.application.domain.model;
+package pl.kfrant.hexagonalarchexample.application.domain;
 
 import org.junit.jupiter.api.Test;
+import pl.kfrant.hexagonalarchexample.application.domain.model.Account;
 import pl.kfrant.hexagonalarchexample.application.domain.model.Account.AccountId;
+import pl.kfrant.hexagonalarchexample.application.domain.model.ActivityWindow;
+import pl.kfrant.hexagonalarchexample.application.domain.model.Money;
 
 import static org.assertj.core.api.Assertions.*;
 

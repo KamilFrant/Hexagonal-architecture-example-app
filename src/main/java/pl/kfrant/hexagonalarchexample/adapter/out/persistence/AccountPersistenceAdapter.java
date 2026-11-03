@@ -2,11 +2,11 @@ package pl.kfrant.hexagonalarchexample.adapter.out.persistence;
 
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Component;
 import pl.kfrant.hexagonalarchexample.application.domain.model.Account;
 import pl.kfrant.hexagonalarchexample.application.domain.model.Activity;
 import pl.kfrant.hexagonalarchexample.application.port.out.LoadAccountPort;
 import pl.kfrant.hexagonalarchexample.application.port.out.UpdateAccountStatePort;
+import pl.kfrant.hexagonalarchexample.common.PersistenceAdapter;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -14,7 +14,7 @@ import java.util.List;
 import static pl.kfrant.hexagonalarchexample.application.domain.model.Account.*;
 
 @RequiredArgsConstructor
-@Component
+@PersistenceAdapter
 class AccountPersistenceAdapter implements LoadAccountPort, UpdateAccountStatePort {
 
     private final SpringDataAccountRepository accountRepository;
