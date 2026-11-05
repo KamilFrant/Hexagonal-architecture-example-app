@@ -8,7 +8,7 @@ This repository is dedicated to learning Clean Architecture through practical ex
 
 🎯 Project Goal
 
-The goal of this repository is to reinforce the knowledge gained while reading the book by regularly writing code, analyzing examples, and experimenting with the presented solutions.
+The goal of this repository is to reinforce the knowledge gained while reading the book by regularly writing code and analyzing examples.
 
 I want to learn through practice, gain a deeper understanding of the concepts discussed, and improve my software design skills.
 
@@ -23,10 +23,6 @@ Edition: Second Edition
 Code examples implemented while reading the book.
 
 Exercises to reinforce the concepts learned.
-
-Personal experiments and alternative solutions.
-
-Notes and insights gained during the learning process.
 
 Code documenting my progress.
 
